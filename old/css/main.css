@@ -1,0 +1,103 @@
+* {
+	color: #000000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif !important;
+	margin: 5px;
+}
+
+h1 {
+	font-size: 5em !important;
+}
+
+h2 {
+	font-size: 2em !important;
+}
+
+h3 {
+	font-size: 1.2em !important;
+	text-align: center;
+	margin-bottom: 20px !important;
+}
+
+h4 {
+	line-height: 2em!important;
+}
+
+
+p {
+	font-family: 'Lato', sans-serif !important;
+	margin: 5px;
+}
+
+img {
+	max-width: 100%;
+}
+
+#header {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+#text {
+
+}
+
+#contact {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 25px;
+}
+
+#tagline {
+	text-align: center;
+}
+
+#myPic {
+	border-radius: 50% !important;
+	margin-left: 12%;
+}
+
+#about {
+	margin-left: 12%;
+	margin-right: 12%;
+	margin-top: 3%;
+}
+
+#section {
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+#row {
+	display: flex;
+	justify-content: space-around;
+}
+
+#experience {
+	width: 33%
+}
+
+#project {
+	max-width: 45%;
+	min-width: 45%;
+	margin-bottom: 30px;
+}
+
+#lang {
+	display: block;
+	margin: 0 auto;
+}
+
+#award {
+	margin-left: 5%;
+}
+
+#footer {
+	background-color: #000000;
+	color: #ffffff;
+}
