@@ -1,5 +1,5 @@
 body {
-	background-color: #FEFEFA;
+	background-color: #F8F8F8;
 	margin: 0;
   	position: absolute;
   	top: 50%;
@@ -10,7 +10,7 @@ body {
 h1, h2 {
 	font-family: 'Raleway', sans-serif;
 	color: #36454F;
-	margin-bottom: 2.5%;
+	
 	margin-top: 0%;
 	text-align: right;
 }
@@ -19,32 +19,66 @@ h1, h2 {
 h1 {
 	font-size: 6em;
 	margin-right: 5%;
+	margin-bottom: 0.5%;
 }
 
 h2 {
 	font-size: 3em;
 	text-decoration: none;
-	margin-right: 6%;
+	margin-right: 5%;
+	margin-bottom: 2.5%;
 }
 
-@media only screen and (max-width: 1400px) {
+.social {
+	float: right;
+}
+
+@media only screen and (max-width: 1550px) {
 	h1 {
 		font-size: 6em;
 	}
 
 	h2 {
-		font-size: 3em;
-	}	
+		font-size: 2.5em;
+	}
 
+	.social {
+		max-width: 100%;
+		height: auto;
+	}	
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
 	h1 {
 		font-size: 4.5em;
 	}	
 
 	h2 {
 		font-size: 2em;
+	}
+
+	.social {
+		max-width: 85%;
+		height: auto;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	h1 {
+		font-size: 4em;
+	}	
+
+	h2 {
+		font-size: 1.75em;
+	}
+
+	.social {
+		max-width: 70%;
+		height: auto;
+	}
+
+	.turtles {
+		background-image: url("images/arrow.png");
 	}
 }
 
@@ -53,7 +87,12 @@ h2 {
 		font-size: 3em;
 	}
 	h2 {
-		font-size: 1.5em;
+		font-size: 1.25em;
+	}
+
+	.social {
+		max-width: 55%;
+		height: auto;
 	}
 }
 
