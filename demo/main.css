@@ -1,0 +1,137 @@
+/*Aesthetics, Header/Footer*/
+body {
+  background-color: #fbf7ed;
+}
+
+p,h1,h2,h3,h4,h5,h6, form, button, input[type=file]{
+  font-family: 'Work Sans', sans-serif;
+  color: #42474c;
+}
+
+#header {
+  color: #ffffff;
+  font-size: 21px;
+}
+
+#footer, a {
+  color: #ffffff;
+  font-size: 12px;
+}
+.shopifyGreen, .shopifyGreenFooter {
+  background-color: #004c3f;
+  text-align: center;  
+  position: fixed;
+  left: 0;
+  width: 100%;
+}
+
+.shopifyGreen {
+  top: 0;
+}
+
+.shopifyGreenFooter {
+  bottom: 0;
+}
+
+/*Content Sections*/
+.content {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#images, #gallery {
+  display: flex;
+  overflow-x: auto;
+}
+
+#uploads {
+  padding-bottom: 20px;
+}
+
+.display {
+  margin: 0 10 0 0px;
+  border: thick solid #004c3f;
+  float: left;
+  text-align: center;
+}
+
+.displayImage {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.displayImage:hover {opacity: 0.7;}
+
+/*Modal*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}

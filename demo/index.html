@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>Shopify Image Repo</title>
+		<link rel="icon" href="logo.png">
+		<meta charset="UTF-8">
+		<meta name="description" content="My Attempt at the Backend Dev Challenge for Shopify">
+  		<meta name="keywords" content="Shopify">
+  		<meta name="author" content="William King">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="main.js"></script>
+		<link rel="stylesheet" href="main.css">
+		<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+	    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.747.0.js"></script>
+	    <script src="s3.js"></script>
+	    <script>
+	       function getHtml(template) {
+	          return template.join('\n');
+	       }
+	    </script>
+	</head>
+	<body>
+		<section class="shopifyGreen">
+			<h1 id="header">Shopify Image Repository</h1>
+		</section>
+		<section class="content">
+			<div id="uploads">
+				<form action="/action_page.php">
+					<h2>Upload Images</h2>
+					<p>Click 'Browse' to select image(s) to upload (previewed below). Click 'Upload' to save the selected images to the gallery.</p>
+					<input type="file" id="imageupload" name="imagename[]" multiple onchange="addImage()">	
+					<div id="images"></div>	
+				</form>
+				<button id="upload" onclick="addPhoto('public')">Upload</button>
+			</div>
+			<h2>Gallery</h2>
+			<div id="directions"></div>
+			<div id="gallery"></div>
+			<div id="myModal" class="modal">
+			  <span id="closeSpan" class="close">&times;</span>
+			  <img class="modal-content" id="img01">
+			  <p id="caption"></p>
+			</div>
+			<script>
+				var modal = document.getElementById("myModal");
+				document.getElementsByClassName("close")[0].onclick = function() { 
+				  modal.style.display = "none";
+				}
+			</script>
+			<button id="view" onclick="viewAlbum('public')">Update Gallery</button>
+			<button id="delete" onclick="multiDelete('public')">Delete Selected Images</button>
+		</section>
+		<section class="shopifyGreenFooter">
+			<h3 id="footer">Created by <a href="https://williamlongking.github.io/">William King</a></h3>
+		</section>
+	</body>
+	
+</html>
