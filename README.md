@@ -1,4 +1,2 @@
 # WilliamLongKing.github.io
-Hi there! This was the repository for the personal website I created. 
-However, since its creation I have learned more about web technologies, specifically in regards to frontend frameworks such as React. 
-As such, I am no longer using this website, as I am hoping to create a better one using React components in the future.
+This is my personal website. After going through numerous iterations, I have decided that a website that is simple and gets the point across is what best represents me and how I want my work to be, so it is made exclusively with simple HTML, CSS, and JavaScript.
