@@ -107,7 +107,7 @@ function addPhoto(albumName) {
     promise.then(
       function(data) {
         alert("Successfully uploaded photo.");
-        //viewAlbum(albumName);
+        viewAlbum(albumName);
       },
       function(err) {
         console.log("oh no");
